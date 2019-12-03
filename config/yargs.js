@@ -1,22 +1,29 @@
-let opt = {
-    descripcion: {
-        demand: true,
-        alias: 'd',
-        desc: "Descripcion de la tarea por hacer"
-    },
-    completado: {
-        default: true,
-        alias: 'c',
-        desc: "marcar como completado o pendiente la tera"
-    }
+const descripcion = {
+    demand: true,
+    alias: 'd',
+    desc: "Descripción de la tarea por hacer"
+};
+const completado = {
+    default: true,
+    alias: 'c',
+    desc: "Marca como completada o pendiente la tarea"
 };
 
-
 const argv = require('yargs')
-    .command('crear', 'Crear un archivo con la tabla de multiplicar', opt)
-    .command('completado', 'Listar una tabla', opt)
-    .command('borrar', 'Tareas que se borrará').help().argv;
-
+    .command('crear', 'Crear una tarea', {
+        descripcion
+    })
+    .command('actualizar', 'Actualiza una tarea', {
+        descripcion,
+        completado
+    })
+    .command('borrar', 'Elimina una tarea', {
+        descripcion
+    })
+    .command('listar', 'Lista una tarea hecha o pendiente', {
+        completado
+    }).help()
+    .argv;
 
 module.exports = {
     argv
