@@ -54,10 +54,10 @@ en este apartado se pueden encontrar las operaciones y funciones que gestionen l
 ya sea para crearlos, editarlos o eliminarlos.
 
 En la carpeta **db** será donde se encuentra el archivo **.json** donde almacenaremos 
-toda la informacion de las tareas ingresada o editada por el usuario.
+toda la información de las tareas ingresada o editada por el usuario.
 
 Finalmente el archivo **app.js** es el lugar donde todo toma forma y aqui nos permite
-realizar la ejecucion de todo nuestros codigos, pues en este archivo se hace el llamado
-a los modulos para su posterior ejecucion.
+realizar la ejecución de todo nuestros codigos, pues en este archivo se hace el llamado
+a los módulos para su posterior ejecución.
 
-**Nota:**Para más especificidad ver los comentarios de los diferentes archivos en este  proyectos
+**Nota:** Para más especificidad ver los comentarios de los diferentes archivos en este  proyectos
